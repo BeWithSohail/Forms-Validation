@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="myForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <p class="error" id="nameError">Name is required.</p>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <p class="error" id="emailError">Enter a valid email address.</p>
+        </div>
+        
+        <div>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <p class="error" id="checkboxError">Checkbox must be checked.</p>
+        </div>
+        
+        <div>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number">
+            <p class="error" id="numberError">Enter a valid number.</p>
+        </div>
+        
+        <div>
+            <label>Radio Buttons:</label>
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label for="radio1">Option 1</label>
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">Option 2</label>
+            <p class="error" id="radioError">Select one option.</p>
+        </div>
+        
+        <div>
+            <label for="select">Select Option:</label>
+            <select id="select" name="select">
+                <option value=""></option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+            <p class="error" id="selectError">Select an option.</p>
+        </div>
+        
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <script src="./forms.js"></script>
+</body>
+</html>
